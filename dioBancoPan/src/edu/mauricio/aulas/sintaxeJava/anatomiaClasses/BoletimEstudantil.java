@@ -1,3 +1,4 @@
+package edu.mauricio.aulas.sintaxeJava.anatomiaClasses;
 //IDENTAÇÃO: Faz parte das boas praticas da programação usar a identação, isto é,
 // a tabulação do codigo de forma hierarquica para facilitar tanto a visualização como entendimento do codigo.
 public class BoletimEstudantil {

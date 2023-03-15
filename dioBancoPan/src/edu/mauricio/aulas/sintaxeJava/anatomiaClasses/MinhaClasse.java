@@ -1,3 +1,4 @@
+package edu.mauricio.aulas.sintaxeJava.anatomiaClasses;
 // SINTAXE JAVA:
 // recomenda usar a implementação do codigo em inglês, ex: no caso de "MinhaClasse" seria "MyClassi";
 // public static void main é um metodo  do java;
