@@ -1,6 +1,6 @@
 package edu.mauricio.aulas.sintaxeJava.tiposVariaveis;
 
-public class tiposPrimitivos {
+public class TipoPrimitivos {
     /* Tipos de dados básicos que são usados para a construção dos programas, 
     são alocados diretamente na pilha de memoria e seus valores são manipulaveis;
     
