@@ -1,6 +1,6 @@
 package edu.mauricio.aulas.sintaxeJava.escopo;
 
-public class Escopo {
+public class Saldo {
 
     /*
     Escopo é o ambiente onde a variavel pode ser acessada, isto é, refere-se a vida e acessibilidade de 
@@ -18,6 +18,7 @@ public class Escopo {
     //variavel da classe Escopo
 
     double saldo = 10.0;
+    double valorEmprestimo = 0.0;
 
     public void sacar(double valor){
         // "valor" - varialve local do metodo
@@ -36,22 +37,32 @@ public class Escopo {
         //somente no metodo sacar conhece essa variavel - "novoSaldo", aqui ela dará erro.
         //System.out.println(novoSaldo);
     }
-
-    /*public double CalcularPrestacoes(double valorParcela, int parcela){ //não consegui descobrir porque 
-        não aceita criar esse metodo em double?
-
+    // consegui fazer desse jeito tambem
+    public void calcularPrestacao (double valorParcela,  double parcela){  
+        
         //variavel local metodo
         
         double valorMontante = 0.0;
-
+        
         for(int x = 1; x <= parcela; x++){
             // "x" é uma variável de fluxo, ela sera reiniciada a cada execução do metodo.
-            float valorCalculado = valorParcela * x;
+            double valorCalculado = valorParcela * x;
             valorMontante = valorMontante + valorCalculado;
             //"X e valorMontante" nunca estarão disponiveis
-            return valorMontante;
+            valorEmprestimo = valorMontante;
         }
+    }    
 
-    }*/
+    // esse aqui foi o metodo passado na aula    
+    public double calcularDividaExpoencial(){
+        double valorParcela = 50.0;
+        double valorMontante = 0.0;
+
+        for(int x=1; x<=5; x++){
+            double valorCalculado = valorParcela*x;
+            valorMontante=valorMontante+valorCalculado;
+        }
+        return valorMontante;
+    }
     
 }
