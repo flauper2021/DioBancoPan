@@ -85,9 +85,11 @@ public class ExemploList {
         System.out.println(" ");
 
         System.out.println(notas);
+        //aqui ele remove o elemento adicionado;
         notas.remove(0.0);
         System.out.println(" ");
         System.out.println(notas);
+        //aqui ele remove o elemento da posição indicada;
         notas.remove(0);
         System.out.println(" ");
         System.out.println(notas);
